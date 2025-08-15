@@ -41,7 +41,9 @@
   "description": "Kayako Integration to interact with tickets in Kayako",
   "name": "Kayako",
   "slug": "kayako",
-  "categories": [],
+  "categories": [
+    "Collaboration Tools"
+  ],
   "uuid": "30b6575a-44f5-401a-9d6a-3b4ef86f0e9c",
-  "version": "0.1.0"
+  "version": "1.0.0"
 }
