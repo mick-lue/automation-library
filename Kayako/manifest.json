@@ -1,0 +1,47 @@
+{
+  "configuration": {
+    "title": "KayakoModuleConfiguration",
+    "type": "object",
+    "properties": {
+      "kayako_url": {
+        "title": "Kayako Url",
+        "description": "The URL of the Kayako instance",
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 65536,
+        "format": "uri"
+      },
+      "kayako_apikey": {
+        "title": "Kayako Apikey",
+        "description": "The API key with access to your instance",
+        "type": "string",
+        "writeOnly": true,
+        "format": "password"
+      },
+      "kayako_secretkey": {
+        "title": "Kayako Secretkey",
+        "description": "The secret key",
+        "type": "string",
+        "writeOnly": true,
+        "format": "password"
+      },
+      "trust_any_cert": {
+        "title": "Trust Any Cert",
+        "description": "Whether to trust any certificate presented at the URL of your instance. Defaults to false, validating the certificate",
+        "default": false,
+        "type": "boolean"
+      }
+    },
+    "required": [
+      "kayako_url",
+      "kayako_apikey",
+      "kayako_secretkey"
+    ]
+  },
+  "description": "Kayako Integration to interact with tickets in Kayako",
+  "name": "Kayako",
+  "slug": "kayako",
+  "categories": [],
+  "uuid": "30b6575a-44f5-401a-9d6a-3b4ef86f0e9c",
+  "version": "0.1.0"
+}

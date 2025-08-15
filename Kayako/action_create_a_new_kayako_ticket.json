@@ -1,0 +1,80 @@
+{
+  "name": "Create a new Kayako Ticket",
+  "description": "Creates a new ticket in Kayako with the provided data and returns that ticket.",
+  "uuid": "daba6fe6-e777-50ee-8e45-504ff808e9fc",
+  "docker_parameters": "KayakoCreateTicket",
+  "arguments": {
+    "title": "KayakoCreateTicketArguments",
+    "type": "object",
+    "properties": {
+      "subject": {
+        "title": "Subject",
+        "description": "The ticket subject",
+        "type": "string"
+      },
+      "fullname": {
+        "title": "Fullname",
+        "description": "Full name of creator",
+        "type": "string"
+      },
+      "email": {
+        "title": "Email",
+        "description": "Email address of creator",
+        "type": "string"
+      },
+      "contents": {
+        "title": "Contents",
+        "description": "Contents of the first ticket post",
+        "type": "string"
+      },
+      "departmentid": {
+        "title": "Departmentid",
+        "description": "The ID of the main department for this ticket",
+        "type": "string"
+      },
+      "ticketstatusid": {
+        "title": "Ticketstatusid",
+        "description": "Ticket status ID",
+        "type": "string"
+      },
+      "ticketpriorityid": {
+        "title": "Ticketpriorityid",
+        "description": "Ticket priority ID",
+        "type": "string"
+      },
+      "tickettypeid": {
+        "title": "Tickettypeid",
+        "description": "Ticket type ID",
+        "type": "string"
+      },
+      "userid": {
+        "title": "Userid",
+        "description": "User ID, if the ticket is to be created as a user",
+        "type": "string"
+      },
+      "staffid": {
+        "title": "Staffid",
+        "description": "Staff ID, if the ticket is to be created as a staff",
+        "type": "string"
+      },
+      "ownerstaffid": {
+        "title": "Ownerstaffid",
+        "description": "Owner Staff ID, if you want to set an owner for this ticket",
+        "type": "string"
+      },
+      "ignoreautoresponder": {
+        "title": "Ignoreautoresponder",
+        "description": "Set to 0 to enable auto-respond mail",
+        "default": 1,
+        "type": "integer"
+      },
+      "autouserid": {
+        "title": "Autouserid",
+        "description": "Set to 0 if the creator should differ from the user connected to the email",
+        "default": 1,
+        "type": "integer"
+      }
+    }
+  },
+  "results": {}
+}

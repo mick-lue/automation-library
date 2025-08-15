@@ -1,0 +1,43 @@
+{
+  "name": "Add a Post to a Ticket",
+  "description": "Adds a post to an existing ticket with the provided data.",
+  "uuid": "fa7d7f34-35d9-519e-8570-6a11c0b0e78c",
+  "docker_parameters": "KayakoAddPost",
+  "arguments": {
+    "title": "KayakoAddPostArguments",
+    "type": "object",
+    "properties": {
+      "ticketid": {
+        "title": "Ticketid",
+        "description": "The unique numerical ticket ID or the mask ticket ID",
+        "type": "string"
+      },
+      "contents": {
+        "title": "Contents",
+        "description": "Contents of the post",
+        "type": "string"
+      },
+      "userid": {
+        "title": "Userid",
+        "description": "User ID",
+        "type": "string"
+      },
+      "staffid": {
+        "title": "Staffid",
+        "description": "Staff ID",
+        "type": "string"
+      },
+      "isprivate": {
+        "title": "Isprivate",
+        "description": "Set to 1 to make the post hidden to customer. Applies only if post is created by staff.",
+        "default": 0,
+        "type": "integer"
+      }
+    },
+    "required": [
+      "ticketid",
+      "contents"
+    ]
+  },
+  "results": {}
+}

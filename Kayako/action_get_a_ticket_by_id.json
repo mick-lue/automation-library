@@ -1,0 +1,21 @@
+{
+  "name": "Get a Ticket by ID",
+  "description": "Returns ticket data for the given ticket ID",
+  "uuid": "66af6bc2-42dd-50b1-a282-1c27fcc0851a",
+  "docker_parameters": "KayakoGetTicket",
+  "arguments": {
+    "title": "KayakoGetTicketArguments",
+    "type": "object",
+    "properties": {
+      "ticketid": {
+        "title": "Ticketid",
+        "description": "The unique numerical ticket ID or the mask ticket ID",
+        "type": "string"
+      }
+    },
+    "required": [
+      "ticketid"
+    ]
+  },
+  "results": {}
+}

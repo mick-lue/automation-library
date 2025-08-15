@@ -1,0 +1,61 @@
+{
+  "name": "Update a Ticket by ID",
+  "description": "Updates the ticket with the given ID using the values provided and returns the updated ticket.",
+  "uuid": "622f28d5-7756-5fe0-8c01-ffa7fcb36629",
+  "docker_parameters": "KayakoUpdateTicket",
+  "arguments": {
+    "title": "KayakoUpdateTicketArguments",
+    "type": "object",
+    "properties": {
+      "ticketid": {
+        "title": "Ticketid",
+        "description": "The unique numerical ticket ID or the mask ticket ID",
+        "type": "string"
+      },
+      "subject": {
+        "title": "Subject",
+        "description": "The ticket subject",
+        "type": "string"
+      },
+      "fullname": {
+        "title": "Fullname",
+        "description": "Full name of creator",
+        "type": "string"
+      },
+      "email": {
+        "title": "Email",
+        "description": "Email address of creator",
+        "type": "string"
+      },
+      "departmentid": {
+        "title": "Departmentid",
+        "description": "The ID of the main department for this ticket",
+        "type": "string"
+      },
+      "ticketstatusid": {
+        "title": "Ticketstatusid",
+        "description": "Ticket status ID",
+        "type": "string"
+      },
+      "ticketpriorityid": {
+        "title": "Ticketpriorityid",
+        "description": "Ticket priority ID",
+        "type": "string"
+      },
+      "tickettypeid": {
+        "title": "Tickettypeid",
+        "description": "Ticket type ID",
+        "type": "string"
+      },
+      "ownerstaffid": {
+        "title": "Ownerstaffid",
+        "description": "Owner Staff ID, if you want to set an owner for this ticket",
+        "type": "string"
+      }
+    },
+    "required": [
+      "ticketid"
+    ]
+  },
+  "results": {}
+}
